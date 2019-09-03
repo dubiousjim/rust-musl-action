@@ -1,0 +1,15 @@
+name: Static Musl Build
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: davidgraeff/rust-musl-action@master
+    - uses: actions/checkout@master
+    - name: Show toolchain
+      run: rustup show
+    - name: Build and Test
+      run: cd ci && cargo run
