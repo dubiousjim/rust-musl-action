@@ -13,3 +13,5 @@ jobs:
       run: rustup show
     - name: Build and Test
       run: cd ci && cargo run
+    - name: Provide static build
+      run: ldd target/debug/ci

@@ -19,8 +19,5 @@ ENV BUILD_DIR=/build \
     OPENSSL_INCLUDE_DIR=/usr/local/ssl/include \
     OPENSSL_STATIC=1
 
-RUN mkdir -p $BUILD_DIR && mkdir -p $OUTPUT_DIR
-WORKDIR $BUILD_DIR
-
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
