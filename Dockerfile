@@ -1,10 +1,10 @@
-FROM liuchong/rustup:1.39.0-musl
+FROM liuchong/rustup:1.43.0-musl
 
 LABEL name="rust-musl-stable"
 LABEL version="1.0.0"
-LABEL repository="https://github.com/davidgraeff/rust-musl-action"
-LABEL homepage="https://github.com/davidgraeff/rust-musl-action"
-LABEL maintainer="David Graeff"
+LABEL repository="https://github.com/dubiousjim/rust-musl-action"
+LABEL homepage="https://github.com/dubiousjim/rust-musl-action"
+LABEL maintainer="Dubiousjim"
 
 LABEL com.github.actions.name="Rust MUSL Builder Slim"
 LABEL com.github.actions.description="Provides a Rust MUSL environment"
